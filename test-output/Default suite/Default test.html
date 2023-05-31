@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/4/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>86/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon May 08 12:45:09 IST 2023</td>
+<td>Started on:</td><td>Wed May 31 16:41:56 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>8 seconds (8367 ms)</td>
+<tr><td>Total time:</td><td>500 seconds (500983 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,34 +76,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.facto.restapi.FactoApi.myTest()'><b>myTest</b><br>Test class: com.facto.restapi.FactoApi<br>Parameters: post, https://91fjgvixl9.execute-api.ap-south-1.amazonaws.com/testing/v1/deleteClient, {\r\n"
-              + "    \"data\":\r\n"
-              + "    {\r\n"
-              + "         \"client_id\": \"e3f757db-de44-5fd2-bbf5-0a56fb50fab6\"\r\n"
-              + "    }\r\n"
-              + "}, 200.0<br/>
-<a href="#Output-1524744833" onClick='toggleBox("Output-1524744833", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1524744833" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1524744833">
-status code is =========400expected========200.0<br/>
-</div>
-</td>
-<td><div><pre>java.lang.AssertionError: expected [200] but found [400]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1577)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:1418)
-	at org.testng.Assert.assertEquals(Assert.java:1382)
-	at org.testng.Assert.assertEquals(Assert.java:1428)
-	at com.facto.restapi.FactoApi.myTest(FactoApi.java:110)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass</td>
+<td><div><pre>org.testng.internal.reflect.MethodMatcherException: 
+[public void com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,double,java.lang.String)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: RestApiLoginValidations([java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3, java.lang.String arg4, double arg5, java.lang.String arg6])
+Arguments: [(java.lang.String) ROW:87,(java.lang.String) Draw Details,(java.lang.String) POST,(java.lang.String) /v1/fetchDrawDetails,(java.lang.String) {
+&quot;drawCode&quot;:&quot;22&quot;},(java.lang.Double) 200.0]
+	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:46)
+	at org.testng.internal.Parameters.injectParameters(Parameters.java:909)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:37)
 	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
@@ -124,22 +106,16 @@ status code is =========400expected========200.0<br/>
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1524744833", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1524744833'><pre>java.lang.AssertionError: expected [200] but found [400]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1577)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:1418)
-	at org.testng.Assert.assertEquals(Assert.java:1382)
-	at org.testng.Assert.assertEquals(Assert.java:1428)
-	at com.facto.restapi.FactoApi.myTest(FactoApi.java:110)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1616793790", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1616793790'><pre>org.testng.internal.reflect.MethodMatcherException: 
+[public void com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,double,java.lang.String)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: RestApiLoginValidations([java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3, java.lang.String arg4, double arg5, java.lang.String arg6])
+Arguments: [(java.lang.String) ROW:87,(java.lang.String) Draw Details,(java.lang.String) POST,(java.lang.String) /v1/fetchDrawDetails,(java.lang.String) {
+&quot;drawCode&quot;:&quot;22&quot;},(java.lang.Double) 200.0]
+	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:46)
+	at org.testng.internal.Parameters.injectParameters(Parameters.java:909)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:37)
 	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
@@ -161,275 +137,8 @@ status code is =========400expected========200.0<br/>
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>com.facto.restapi.FactoApi@35e2d654</td></tr>
-<tr>
-<td title='com.facto.restapi.FactoApi.myTest()'><b>myTest</b><br>Test class: com.facto.restapi.FactoApi<br>Parameters: post, https://91fjgvixl9.execute-api.ap-south-1.amazonaws.com/testing/v1/insertClients, {\"data\":{\"client_name\":\"kkk\",\"entity_name\":\"MyNewEntity3\",\"sub_category\":\"MyNewSubcategory3\",\"client_address\":\"MyNewAddress3\",\"primary_contact_details\":\"909090909\",\"secondary_contact_details\":\"9999999991\",\"billing_address\":\"MyNewBillingAddress3\",\"sla_agreement\":\"\",\"client_components\":[\"Address\"],\"pricing\":\"900000001\"}}, 200.0<br/>
-<a href="#Output-1375297293" onClick='toggleBox("Output-1375297293", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1375297293" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1375297293">
-status code is =========400expected========200.0<br/>
-</div>
-</td>
-<td><div><pre>java.lang.AssertionError: expected [200] but found [400]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1577)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:1418)
-	at org.testng.Assert.assertEquals(Assert.java:1382)
-	at org.testng.Assert.assertEquals(Assert.java:1428)
-	at com.facto.restapi.FactoApi.myTest(FactoApi.java:110)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1375297293", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1375297293'><pre>java.lang.AssertionError: expected [200] but found [400]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1577)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:1418)
-	at org.testng.Assert.assertEquals(Assert.java:1382)
-	at org.testng.Assert.assertEquals(Assert.java:1428)
-	at com.facto.restapi.FactoApi.myTest(FactoApi.java:110)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.facto.restapi.FactoApi@35e2d654</td></tr>
-<tr>
-<td title='com.facto.restapi.FactoApi.myTest()'><b>myTest</b><br>Test class: com.facto.restapi.FactoApi<br>Parameters: post, https://91fjgvixl9.execute-api.ap-south-1.amazonaws.com/testing/v1/fetchAllClients, "", 200.0<br/>
-<a href="#Output-194838923" onClick='toggleBox("Output-194838923", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-194838923" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-194838923">
-status code is =========400expected========200.0<br/>
-</div>
-</td>
-<td><div><pre>java.lang.AssertionError: expected [200] but found [400]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1577)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:1418)
-	at org.testng.Assert.assertEquals(Assert.java:1382)
-	at org.testng.Assert.assertEquals(Assert.java:1428)
-	at com.facto.restapi.FactoApi.myTest(FactoApi.java:110)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace194838923", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace194838923'><pre>java.lang.AssertionError: expected [200] but found [400]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1577)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:1418)
-	at org.testng.Assert.assertEquals(Assert.java:1382)
-	at org.testng.Assert.assertEquals(Assert.java:1428)
-	at com.facto.restapi.FactoApi.myTest(FactoApi.java:110)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.facto.restapi.FactoApi@35e2d654</td></tr>
-<tr>
-<td title='com.facto.restapi.FactoApi.myTest()'><b>myTest</b><br>Test class: com.facto.restapi.FactoApi<br>Parameters: post, https://91fjgvixl9.execute-api.ap-south-1.amazonaws.com/testing/v1/updateClient, {\r\n"
-          + "    \"data\": {\r\n"
-          + "        \"client_name\": \"vijaykumar\",\r\n"
-          + "        \"entity_name\": \"My New Entity5\",\r\n"
-          + "        \"sub_category\": \"My New Subcategory5\",\r\n"
-          + "        \"client_address\": \"My New Address5\",\r\n"
-          + "        \"primary_contact_details\": \"9090909095\",\r\n"
-          + "        \"secondary_contact_details\": \"9999999995\",\r\n"
-          + "        \"billing_address\": \"My New Billing Address5\",\r\n"
-          + "        \"sla_agreement\": \"pak5.jpg\",\r\n"
-          + "        \"client_components\": [\r\n"
-          + "            \"Address\",\r\n"
-          + "            \"Employment\"\r\n"
-          + "        ],\r\n"
-          + "        \"pricing\": \"9000000015\",\r\n"
-          + "        \"client_id\": \"88ef3ebe-e6fb-5a8a-a192-054b8354af29\"\r\n"
-          + "    }\r\n"
-          + "}
-            , 200.0<br/>
-<a href="#Output-1759368213" onClick='toggleBox("Output-1759368213", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1759368213" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1759368213">
-status code is =========400expected========200.0<br/>
-</div>
-</td>
-<td><div><pre>java.lang.AssertionError: expected [200] but found [400]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1577)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:1418)
-	at org.testng.Assert.assertEquals(Assert.java:1382)
-	at org.testng.Assert.assertEquals(Assert.java:1428)
-	at com.facto.restapi.FactoApi.myTest(FactoApi.java:110)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1759368213", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1759368213'><pre>java.lang.AssertionError: expected [200] but found [400]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1577)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:1418)
-	at org.testng.Assert.assertEquals(Assert.java:1382)
-	at org.testng.Assert.assertEquals(Assert.java:1428)
-	at com.facto.restapi.FactoApi.myTest(FactoApi.java:110)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.facto.restapi.FactoApi@35e2d654</td></tr>
+<td>486</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -440,10 +149,666 @@ status code is =========400expected========200.0<br/>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.facto.restapi.FactoApi.LoginjwtToken()'><b>LoginjwtToken</b><br>Test class: com.facto.restapi.FactoApi</td>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:77, Winners Month With Login, POST, /v1/fetchWinnersMonthWithLogin, {}, 200.0, {"monthsSet":[{"month":"May","monthCode":5,"year":2023},{"month":"April","monthCode":4,"year":2023},{"month":"March","monthCode":3,"year":2023},{"month":"February","monthCode":2,"year":2023},{"month":"January","monthCode":1,"year":2023},{"month":"December","monthCode":12,"year":2022},{"month":"November","monthCode":11,"year":2022},{"m</td>
 <td></td>
 <td>5</td>
-<td>com.facto.restapi.FactoApi@35e2d654</td></tr>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:59, News and Blogs, POST, /v1/fetchNewsAndBlogs, {}, 200.0, [{"id":369,"title":"Raffolux player Karen makes headlines","slug":"raffolux-player-karen-makes-headlines","updated_on":"2023-04-26T12:29:51.829Z","content":"Karen Hewit, a devoted mother from the UK, has been making headlines recently for her first holiday in 30 years. Karen has dedicated her entire life to caring for her son Jack, who has cerebral palsy and severe epilepsy. Her story of love and sacrifice has touched the hearts of people around the world, and it's been revealed that she's a long-term player of Raffolux.com, the online raffle site where she won her holiday.\r\n
+
+\r\n\r\n
+
+\r\nKaren's son, Jack, was diagnosed with cerebral palsy at birth, which affects movement and coordination, causing significant physical and developmental disabilities. In addition, Jack also has severe epilepsy, requiring around-the-clock care and attention. Karen has been his primary caregiver for the past 30 years, providing constant support and assistance.\r\n
+
+\r\nRaffolux.com, the online raffle site, offers luxury prizes to raise money for charities, and Karen is a long-term player. Her participation in the site led her to win a week-long stay in a caravan park in Cornwall, a well-deserved break for her after three decades of caregiving.\r\n
+
+\r\nThe trip was a life-changing experience for Karen, who could finally take a break from her caregiving duties and enjoy some time for herself. She could unwind and create beautiful memories, something that she has not had the chance to do for a long time.\r\n
+
+\r\nKaren's story is a beautiful reminder of the importance of taking care of our loved ones, and the incredible sacrifices parents make for their children. Her dedication and selflessness serve as an inspiration to us all, and her well-deserved holiday is a testimony to the power of kindness and generosity.\r\n
+
+\r\nWe are so happy that our lovely Karen enjoyed her trip away! Karen has appeared in many local papers such as Wales Online, Belfast Liveand over 16 other incredible titles. Don’t miss out… join the fun!\r\n
+
+\r\n\r\n
+
+\r\n  ","created_on":"2023-04-26T11:27:32.702Z","status":1,"author":"Raffolux","img_alt":"Mum going on her first holiday in 30 years after dedicating life to looking after son","img_url":"media/winners/KARENHDEVON.webp","keywords":"x","news_category":"ALL","card_description":"Mum going on her first holiday in 30 years after dedicating","meta_description":"Mum going on her first holiday in 30 years after dedicating life to looking after son","meta_title":"Raffolux player Karen makes headlines"},{"id":368,"title":"Using Raffles to Raise Money for Charity","slug":"using-raffle-raise-money-charity","updated_on":"2023-04-04T15:48:29.228Z","content":"Raffles are a popular way to raise funds for charitable causes, and for good reason. They offer a fun and engaging way for people to contribute to a good cause while also having the chance to win a prize. Here are some of the benefits of using raffles to support charitable causes:\r\n
+
+\r\nRaffles can raise significant funds : Raffles can be a highly effective way to raise funds for charities. By selling raffle tickets, charities can generate significant revenue that can be used to support their programs and initiatives.\r\n
+
+\r\n Raffles help raise awareness : Raffles can be a great way to raise awareness about a particular cause or charity. By promoting the raffle through social media, email newsletters, and other channels, charities can reach a wider audience and educate them about the work they do.\r\n
+
+\r\n Raffles engage supporters : Raffles can be a fun and engaging way to involve supporters in fundraising efforts. By offering attractive prizes and promoting the raffle through various channels, charities can encourage people to get involved and contribute to the cause.\r\n
+
+\r\n Raffles build community : Raffles can help build a sense of community around a particular cause or charity. By bringing people together and encouraging them to support the same cause, charities can create a sense of shared purpose and inspire people to work together to achieve a common goal.\r\n
+</td>
+<td></td>
+<td>6</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:17, getRafflePageDataWithLogin, POST, /v1/getRafflePageDataWithLogin, {
+    "raffleCode": "3874"
+}, 200.0, :[{"id":8197,"RaffleCode":3909,"QuantityOfItems":1,"MainImageUrl":"media23/rafNinjaBBQ_main.webp","Summary":".","Description":"Win an Ninja Woodfire Electric BBQ!\r\n
+
+</td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:26, All Prizes, POST, /v1/fetchAllPrizes, {
+    
+    "raffle_id": 8860,
+    "topPrizes": 50
+}, 200.0, [{"ticket_no_alias":80,"status":3,"instant_win_prize__name":"£25 Site Credit","instant_win_prize__value":"25.00"},{"ticket_no_alias":210,"status":3,"instant_win_prize__name":"£25 Site Credit","instant_win_prize__value":"25.00"},{"ticket_no_alias":248,"status":3,"instant_win_prize__name":"£50 Cash","instant_win_prize__value":"50.00"},{"ticket_no_alias":300,"status":3,"instant_win_prize__name":"£10</td>
+<td></td>
+<td>6</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:27, fetchAllPrizes  by giving invalid endpoint, POST, /v1/getRaffePageD, {
+    "raffleCode": "3874"
+}, 403.0, {"message":"Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. </td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:71, Winners Gallery With Login, POST, /v1/fetchWinnersGalleryWithLogin, {
+    "page":1
+}, 200.0, {"message":"Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. </td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:56, Sold Out Raffles with Login, POST, /v1/fetchSoldOutRafflesWithLogin, {}, 200.0, []</td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:6,  fetchFeaturedRafflesWithLogin by giving invalid endpoint, POST, /v2/fetchFeaturedRafflessL, {}, 403.0, {"message":"Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. </td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:9, fetchAllRaffles by giving invalid endpoint, POST, /v2/fetchFeaturedRafflessL, {}, 403.0, {"message":"Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. </td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:47, Charity Support With Login, POST, /v1/charitySupportWithLogin, {}, 200.0, [{"id":300,"CharityName":"ActionAid UK","CharityDescription":"ActionAid is an international charity that works with women and girls living in poverty. ActionAid is ending violence and fighting poverty so that all women, everywhere, can create the future they want.","CharityImgUrl":"media/ActionAidUKLogo.png","CharityActive":true,"CharityUrl":"https://www.actionaid.org.uk/","CharitySortOrder":1,"CharityDisplay":true,"CharitySelectable":true,"CharityShowLogo":true,"CharityImgAlt":"ActionAid Logo","CharityWhowonDescription":"","CharityWhowonImgUrl":"","DonationAmountAdjust":2837,"CharityLogoImgUrl":"media/AAUKlogo2.png","DonationAmountDisplayed":2837,"CharityUrlNewsletter":"","CharityAwareness":false,"created_at":"2021-03-01T00:00:01.000Z","CharityColor":"#000"}]</td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:46, updateCharityWithLogin  by giving  wrong payload, POST, /v1/updateCharityWithLogin, {
+    "raffl": "3874"
+}, 400.0, Invalid Request</td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:51, fetchStatistics by giving invalid endpoint, POST, /v1/getRaffePageD, {
+    "raffleCode": "3874"
+}, 403.0, {"message":"Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. </td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:8, All Raffles by giving valid data, POST, /v1/fetchAllRaffles, {}, 200.0, [{"id":8197,"RaffleCode":3909,"QuantityOfItems":1,"MainImageUrl":"media23/rafNinjaBBQ_main.webp","Summary":".","Description":"Win an Ninja Woodfire Electric BBQ!\r\n
+</td>
+<td></td>
+<td>6</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:44, Update Charity With Login, POST, /v1/updateCharityWithLogin, {
+    "charity_id": 300
+}, 200.0, :200</td>
+<td></td>
+<td>0</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:14, getRafflePageData by giving valid data, POST, /v1/getRafflePageData, {
+    "raffleCode": "3874"
+}, 200.0, :[{"id":8197,"RaffleCode":3909,"QuantityOfItems":1,"MainImageUrl":"media23/rafNinjaBBQ_main.webp","Summary":".","Description":"Win an Ninja Woodfire Electric BBQ!\r\n
+
+</td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:2, fetchFeaturedRaffles by giving valid data, POST, /v1/fetchFeaturedRaffles, {}, 200.0, [{"id":8197,"RaffleCode":3909,"QuantityOfItems":1,"MainImageUrl":"media23/rafNinjaBBQ_main.webp","Summary":".","Description":"Win an Ninja Woodfire Electric BBQ!\r\n
+
+\r\nDiscover a new way to cook outdoors. Grill, smoke, air fry and more, all with real Woodfire flavours. Powered by electricity, simply plug in and go for hassle-free outdoor cooking, any day of the week. All the flavour without the fuss of gas or charcoal. Fire up the flavour with Woodfire Technology. The integrated smoker box burns 100% natural wood pellets to create authentic woodfire flavours - simply add 1 scoop of Woodfire Pellets. 7 ways to cook: Grill, Smoke, Air Fry, Roast, Bake, Reheat and Dehydrate.","ReservePrice":"0.00","NoOfTickets":null,"RaffleLength":null,"RaffleExpire":"2023-05-22T21:00:00.000Z","RaffleAdded":"2023-04-24T13:30:49.730Z","Featured":false,"TicketsSold":0,"TicketsLeft":null,"TicketStartInt":1,"CategoryID_id":6,"Condition_id":1,"DeliveryInformation_id":2,"Status_id":2,"Charity_id":null,"CharityAmount":"0","Title":"Ninja Woodfire BBQ","ProductSource":"","RetailPrice":"350.00","Specification":"ç7 ways to cook: \r\nGrill \r\nSmoke\r\nAir Fry \r\nRoast\r\nBake\r\nReheat\r\nDehydrate.","TargetPrice":"700.00","Seller_id":1,"CreatedDateTime":"2023-04-24T13:30:49.745Z","MiniImageUrl":"media23/rafNinjaBBQ_mini.webp","FacebookDescription":"Win an Ninja Woodfire Electric BBQ!","FacebookTitle":"Win an Ninja Woodfire Electric BBQ!","CreditsPerTicket":1,"Extended":false,"ExtendedDays":0,"isLive":true,"TicketsPerEntry":1,"MaxEntries":20,"isCharity":false,"CharityColorOverride":"","isFlash":false,"slug":"ninjabbq","VideoUrl_mp4":"","FeatureRaffleSort":0,"VideoLength_mp4":0,"VideoUrl_webm":"","NoWinners":1,"JiraKeyId":"NA","Sponsor_id":null,"MainImageAlt":"Win an Ninja Woodfire Electric BBQ!","MiniImageAlt":"Win an Ninja Woodfire Electric BBQ!","PromoImageAlt":"","PromoImageUrl":"","drawing_in":"2023-05-22T21:00:00.000Z","postal_tickets":"","ticket_entries":"","isSuperRaffle":false,"isUnlimitedTickets":false,"Winners":null,"isLiveDraw":false,"isSequentialTickets":false,"isAutoClone":false,"autoCloned":false,"clonedFrom_id":8580,"Video_NoSound":false,"VideoLiveDrawUrl":null,"MetaDescription":"Win an Ninja Woodfire Electric BBQ!","MetaTitle":"Win an Ninja Woodfire Electric BBQ!","XLImageAlt":"","XLImageUrl":"","isFreeRaffle":false,"isNew":false,"CharityTargetRaisedAmount":0,"CharityApproximateDonation":1000,"isUnlimitedEntries":true,"isGuaranteedDraw":false,"autoraffle":false,"custom_raffle_id":null,"displayed_winner_description":"","displayed_winner_img_url":null,"AllRaffleSort":0,"entry_cost_gbp":"0.99","is_unlimited_entries":false,"is_unlimited_raffle":false,"total_entries":699,"total_entries_per_player":50,"discounted_entry_cost_gbp":"1.00","discounted_entry_percentage":"0","disable_ticket_selector":false,"Youtube_Link":"","hide_tickets_checkout":false,"instant_win_image":null,"noOfTopPrizes":6,"cash_alternative":0,"isFeatured":true,"Sort":1,"Raffle_id":8909,"Website_id":6,"percentage_sold":58,"total_entries_sold":"405","is_launch_price":false,"time_left_days":-8,"is_timer_enabled":false},{"id":8212,"RaffleCode":4094,"QuantityOfItems":1,"MainImageUrl":"media23/raf3KMulti_main.webp","Summary":".","Description":"Welcome to THE 100!\r\n
+
+\r\n£3,000 worth of prizes in total.\r\n
+
+\r\nThe minimum win on this prize is £100. That's right every instant win on this raffle is £100 and there are 25 you could find! \r\n
+
+\r\nThere is also a £500 Jackpot when the raffle draws. \r\n
+
+\r\nYou will win an instant-win prize if you purchase a ticket number associated with a prize, if an instant-win prize ticket is unsold, it will not be won.\r\n
+
+\r\nThere are 25 x £100 cash prizes hidden in this raffle and don't forget every ticket you buy will be in with a chance of winning the £500 Jackpot.","ReservePrice":"0.00","NoOfTickets":null,"RaffleLength":null,"RaffleExpire":"2023-06-24T21:00:00.000Z","RaffleAdded":"2023-05-22T10:38:07.529Z","Featured":false,"TicketsSold":0,"TicketsLeft":null,"TicketStartInt":1,"CategoryID_id":35,"Condition_id":1,"DeliveryInformation_id":2,"Status_id":2,"Charity_id":null,"CharityAmount":"0","Title":"The 100 Instant Win","ProductSource":"","RetailPrice":"500.00","Specification":".","TargetPrice":"6000.00","Seller_id":1,"CreatedDateTime":"2023-05-22T10:38:07.543Z","MiniImageUrl":"media23/raf3KMulti_mini.webp","FacebookDescription":"The 100 Instant Win","FacebookTitle":"The 100 Instant Win","CreditsPerTicket":1,"Extended":false,"ExtendedDays":0,"isLive":true,"TicketsPerEntry":1,"MaxEntries":20,"isCharity":false,"CharityColorOverride":"","isFlash":true,"slug":"the100","VideoUrl_mp4":"","FeatureRaffleSort":0,"VideoLength_mp4":0,"VideoUrl_webm":"","NoWinners":1,"JiraKeyId":"NA","Sponsor_id":null,"MainImageAlt":"The 100","MiniImageAlt":"The 100","PromoImageAlt":"The 100","PromoImageUrl":"media23/raf3KMulti_promo.webp","drawing_in":"2023-06-30T21:00:00.000Z","postal_tickets":"","ticket_entries":"","isSuperRaffle":false,"isUnlimitedTickets":false,"Winners":null,"isLiveDraw":false,"isSequentialTickets":false,"isAutoClone":false,"autoCloned":false,"clonedFrom_id":8841,"Video_NoSound":false,"VideoLiveDrawUrl":null,"MetaDescription":"The 100 Instant Win","MetaTitle":"The 100 Instant Win","XLImageAlt":"The 100","XLImageUrl":"media23/raf3KMulti_XL.webp","isFreeRaffle":false,"isNew":false,"CharityTargetRaisedAmount":0,"CharityApproximateDonation":1000,"isUnlimitedEntries":true,"isGuaranteedDraw":false,"autoraffle":false,"custom_raffle_id":null,"displayed_winner_description":"","displayed_winner_img_url":null,"AllRaffleSort":0,"entry_cost_gbp":"4.99","is_unlimited_entries":false,"is_unlimited_raffle":false,"total_entries":999,"total_entries_per_player":80,"discounted_entry_cost_gbp":"1.00","discounted_entry_percentage":"0","disable_ticket_selector":true,"Youtube_Link":"","hide_tickets_checkout":true,"instant_win_image":null,"noOfTopPrizes":25,"cash_alternative":0,"isFeatured":true,"Sort":0,"Raffle_id":9099,"Website_id":6,"percentage_sold":26,"total_entries_sold":"255","is_launch_price":false,"time_left_days":0,"is_timer_enabled":false},{"id":8205,"RaffleCode":3996,"QuantityOfItems":1,"MainImageUrl":"media23/rafAC_main.webp","Summary":".","Description":"This cash Instant Win raffle is out of this world! \r\n
+
+\r\nNot only is there £2,000 up for grabs but there is also £28,000 of instant wins that could be found throughout the raffle!\r\n
+
+\r\nWill you be fast enough to grab these instant wins and bag yourself some cash on the way to the chance of winning a whopping £2,000?\r\n
+
+\r\nYou will win an instant-win prize if you purchase a ticket number associated with a prize, if an instant-win prize ticket is unsold, it will not be won. \r\n
+</td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:32, All Prizes Filter, POST, /v1/fetchAllPrizesFilter, {
+   
+    "raffle_id": 8860,
+    "topPrizes": 50,
+    "searchValue":"si",
+    "type":"descending"
+}, 200.0, [{"ticket_no_alias":49933,"status":3,"instant_win_prize__name":"£10 Site Credit","instant_win_prize__value":"10.00"},{"ticket_no_alias":49899,"status":3,"instant_win_prize__name":"£5 Site Credit","instant_win_prize__value":"5.00"},{"ticket_no_alias":49859,"status":3,"instant_win_prize__name":"£25 Site Credit","instant_win_prize_</td>
+<td></td>
+<td>6</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:83, get Raffles With Login  by giving  wrong payload, POST, /v1/fetchWinnersDatewiseDataWithLogin, {
+    "raffl": "3874"
+}, 400.0, Invalid Request</td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:50, Statistics, POST, /v1/fetchStatistics, {}, 200.0, :{"PrizesWon":"9417871.64","RaisedCharity":"594828","RaffleWinners":"32046"}</td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:40, fetchTotalRaisedCharitiesCount  by giving  wrong payload, POST, /v1/fetchTotalRaisedCharitiesCount, {
+    "raffl": "3874"
+}, 200.0, :[{"sum":"594828"}]</td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:33, fetchAllPrizesFilter by giving invalid endpoint, POST, /v1/getRaffePageD, {
+    "raffleCode": "3874"
+}, 403.0, {"message":"Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. </td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:45, updateCharityWithLogin  by giving invalid endpoint, POST, /v1/getRaffePageD, {
+    "raffleCode": "3874"
+}, 403.0, {"message":"Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. </td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:69, fetchMyRafflesWithLogin by giving invalid endpoint, POST, /v1/getRaffePageD, {
+    "raffleCode": "3874"
+}, 403.0, {"message":"Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. </td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:81, Winners Datewise Data With Login, POST, /v1/fetchWinnersDatewiseDataWithLogin, {
+    "monthCode":5,
+    "year":2023
+}, 200.0, [{"date":21,"data":[{"id":9649,"Name":"Angela Cosgrove","TicketNo":440,"Location":"","ImgUrl":"","YouTubeVideoUrl":"","Draw_id":9311,"UserName_id":155572,"Position":1,"isFeatured":false,"created_at":"2023-05-21T21:01:43.539Z","DrawCode":"203845","MainImageUrl":"media23/raf4KBC_main.webp","Title":"£4,000</td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:57, fetchSoldOutRafflesWithLogin  by giving invalid endpoint, POST, /v1/getRaffePageD, {
+    "raffleCode": "3874"
+}, 403.0, {"message":"Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. </td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:43, fetchIndividualCharity by giving  wrong payload, POST, /v1/fetchIndividualCharity, {
+    "raffl": "3874"
+}, 400.0, Invalid Request</td>
+<td></td>
+<td>0</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:68, My Raffles With Login, POST, /v1/fetchMyRafflesWithLogin, {
+    "page": 1
+}, 200.0, {"user":[{"id":151063,"password":"pbkdf2_sha256$260000$dXy3C5YBycNQqTZNjferg2$6nVTcOIxISZSEiyVMW5yn5pVyvznSDO912B/iVFGgcE=","last_login":"2023-05-30T03:59:12.968Z","is_superuser":true,"username":"veera.raghavan@rhibhus.com","first_name":"veera","last_name":"raghavan","email":"veera.raghavan@rhibhus.com","is_staff":true,"is_active":true,"date_joined":"2022-11-02T05:41:44.810Z","is_guest":false,"experience_version":1,"select_post_preference":false,"marketing_opt_in":false}],"raffles_entered_active":[{"id":8985,"RaffleCode":3978,"QuantityOfItems":1,"MainImageUrl":"media23/rafMWTH1_main.webp","Summary":".","Description":"Welcome to Raffolux's instant win raffle! With up to £100,000 of prizes up for grabs, this is an opportunity you don't want to miss.\r\n
+
+\r\nAll you have to do is purchase a ticket and once the number is revealed you will find out if you have won a prize INSTANTLY. The prizes include exclusive experiences, luxury items, and more!
+
+\r\nThis instant win Treasure hunt is packed full of HUGE cash prizes!\r\n
+
+\r\nCASH IS KING\r\n
+
+\r\n4x £5,000\r\n1x £3,000\r\n3x £2,000\r\n30x £1,000\r\nAND THAT'S JUST THE BIG CASH...there are up to 880 instant wins you could win in total!\r\n
+
+\r\nThis instant win is also stuffed full of tech, holidays, vouchers, and credit. You name it it's probably in here.\r\n
+
+\r\nSimply enter the raffle and you will be randomly allocated your tickets. If your tickets match one of the numbers in the details below, you will win that prize instantly!\r\n
+
+\r\nEvery ticket will also be in with an equal chance of winning the grand prize of £10,000 cash! \r\n
+</td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:22, fetchTopPrizes Login  by giving  wrong payload, POST, /v1/fetchTopPrizes, {
+    "raffl": "3874"
+}, 400.0, Invalid Request</td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:63, fetchNews by giving invalid endpoint, POST, /v1/getRaffePageD, {
+    "raffleCode": "3874"
+}, 403.0, {"message":"Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. </td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:11, All Raffles With Login, POST, /v1/fetchAllRafflesWithLogin, {}, 200.0, [{"id":8197,"RaffleCode":3909,"QuantityOfItems":1,"MainImageUrl":"media23/rafNinjaBBQ_main.webp","Summary":".","Description":"Win an Ninja Woodfire Electric BBQ!\r\n
+</td>
+<td></td>
+<td>6</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:62, News, POST, /v1/fetchNews, {
+    "slug":"using-raffle-raise-money-charity"
+}, 200.0, {"message":"Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. </td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:10, fetchAllRaffles by giving  wrong payload, POST, /v1/fetchAllRaffles, {"idwe":"123"}, 200.0, [{"id":8197,"RaffleCode":3909,"QuantityOfItems":1,"MainImageUrl":"media23/rafNinjaBBQ_main.webp","Summary":".","Description":"Win an Ninja Woodfire Electric BBQ!\r\n
+</td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:41, Individual Charity, POST, /v1/fetchIndividualCharity, {
+    "id":"300"
+}, 200.0, [{"id":300,"CharityName":"ActionAid UK","CharityDescription":"ActionAid is an international charity that works with women and girls living in poverty. ActionAid is ending violence and fighting poverty so that all women, everywhere, can create the future they want.","CharityImgUrl":"media/ActionAidUKLogo.png","CharityActive":true,"CharityUrl":"https://www.actionaid.org.uk/","CharitySortOrder":</td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:72, fetchWinnersGalleryWithLogin by giving invalid endpoint, POST, /v1/getRaffePageD, {
+    "raffleCode": "3874"
+}, 403.0, {"message":"Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. </td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:52, fetchStatistics  by giving  wrong payload, POST, /v1/fetchStatistics, {
+    "raffl": "3874"
+}, 200.0, {"PrizesWon":"9417871.64","RaisedCharity":"594828","RaffleWinners":"32046"}</td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:75, fetchWinnersGallery  by giving invalid endpoint, POST, /v1/getRaffePageD, {
+    "raffleCode": "3874"
+}, 403.0, {"message":"Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. </td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:23, Top Prizes With Login, POST, /v1/fetchTopPrizesWithLogin, {
+    "raffle_id": 8716,
+    "topPrCnt": "50"
+}, 200.0, [{"id":655,"created":"2023-03-15T21:27:56.665Z","status":3,"ticket_no_alias":23514,"raffle_id":8716,"user_id":163509,"updated":"2023-03-15T21:27:56.665Z","price":"5000.00","legacy_tkt_nos":null,"instant_win_prize_id":655,"name":"£5,000 Cash","description":"","img_url":"media23/rafMWTH5000.web</td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:24, fetchTopPrizesWithLogin by giving invalid endpoint, POST, /v1/getRaffePageD, {
+    "raffleCode": "3874"
+}, 403.0, {"message":"Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. </td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:48, charitySupportWithLogin  by giving invalid endpoint, POST, /v1/getRaffePageD, {
+    "raffleCode": "3874"
+}, 403.0, {"message":"Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. </td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:84, Winners Datewise Data Filter With Login, POST, /v1/fetchWinnersDatewiseDataFilterWithLogin, {
+    "monthCode":5,
+    "year":2023,
+    "searchValue":"brief"
+}, 200.0, :[{"date":21,"data":[{"id":9649,"Name":"Angela Cosgrove","TicketNo":440,"Location":"","ImgUrl":"","YouTubeVideoUrl":"","Draw_id":9311,"UserName_id":155572,"Position":1,"isFeatured":false,"created_at":"2023-05-21T21:01:43.539Z","DrawCode":"203845","MainImageUrl":"media23/raf4KBC_main.webp","Title":"£4,000 in a Briefcase - Low Odds"}]},{"date":14,"data":[{"id":9628,"Name":"Nick Shaw","TicketNo":285,"Location":"","ImgUrl":"","YouTubeVideoUrl":"","Draw_id":9</td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:85, fetchWinnersDatewiseDataFilterWithLogin  by giving invalid endpoint, POST, /v1/getRaffePageD, {
+    "raffleCode": "3874"
+}, 403.0, {"message":"Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. </td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:12, fetchAllRaffles With Login by giving invalid endpoint, POST, /v2/fetchFeaturedRafflessL, {}, 403.0, {"message":"Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. </td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br/>
+<a href="#Output-341778327" onClick='toggleBox("Output-341778327", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-341778327" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-341778327">
+Actual Response body =>eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxNTEwNjMsInVzZXJfZW1haWwiOiJ2ZWVyYS5yYWdoYXZhbkByaGliaHVzLmNvbSIsInVzZXJfZmlyc3RfbmFtZSI6InZlZXJhIiwidXNlcl9sYXN0X25hbWUiOiJyYWdoYXZhbiIsImlhdCI6MTY4NTUzMTUyOX0._8-7Yoh0M4NdKIzZMmfBGa2AdAcAKx_oge9sun7A2KI=>Expected Response Body is=>eyJ1c2VyX2lkIjoxNTEwNjMsInVzZXJfZW1haWwiOiJ2ZWVyYS5yYWdoYXZhbkByaGliaHVzLmNvbSIsInVzZXJfZmlyc3RfbmFtZSI6InZlZXJhIiwidXNlcl9sYXN0X25hbWUiOiJyYWdoYXZhbiIsImlhdCI6MTY4NTMzMjEwM30<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:74, Winners Gallery, POST, /v1/fetchWinnersGallery, {
+    "page":1
+}, 200.0, :{"next_page":2,"winners":[{"id":8540,"DrawName":"2767 - Makita Cordless 4-Piece Tool Set","DrawType":"R","DrawCode":"177156","RaffleLink_id":7718,"BackgroundImageUrl":"","username":"janeymc1@aol.com","Location":"","TicketNo":231,"ImgUrl":"media/winners/JaneMillerWinnerpic.jpg","YouTubeVideoUrl":""},{"id":8474,"DrawName":"2646 - Tag Heuer Formula 1 Chronograph","DrawType":"R","DrawCode":"176448","RaffleLink_id":7576,"BackgroundImageUrl":"","usernam</td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:54, fetchSoldOutRaffles by giving invalid endpoint, POST, /v1/getRaffePageD, {
+    "raffleCode": "3874"
+}, 403.0, {"message":"Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. </td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:79, fetchWinnersMonthWithLogin by giving invalid endpoint, POST, /v1/getRaffePageD, {
+    "raffleCode": "3874"
+}, 403.0, {"message":"Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. </td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:49, charitySupportWithLogin  by giving  wrong payload, POST, /v1/charitySupportWithLogin, {
+    "raffl": "3874"
+}, 200.0, :[{"id":300,"CharityName":"ActionAid UK","CharityDescription":"ActionAid is an international charity that works with women and girls living in poverty. ActionAid is ending violence and fighting poverty so that all women, everywhere, can create the future they want.","CharityImgUrl":"media/ActionAidUKLogo.png","CharityActive":true,"CharityUrl":"https://www.actionaid.org.uk/","CharitySortOrder":1,"CharityDisplay":true,"CharitySelectable":true,"CharityShowLogo":true,"CharityImgAlt":"ActionAid Logo","CharityWhowonDescription":"","CharityWhowonImgUrl":"","DonationAmountAdjust":2837,"CharityLogoImgUr</td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:7, fetchFeaturedRafflesWithLogin by giving  wrong payload, POST, /v1/fetchFeaturedRafflesWithLogin, {"idwe":"123"}, 200.0, [{"id":8197,"RaffleCode":3909,"QuantityOfItems":1,"MainImageUrl":"media23/rafNinjaBBQ_main.webp","Summary":".","Description":"Win an Ninja Woodfire Electric BBQ!\r\n
+</td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:30, fetchAllPrizesWithLogin by giving invalid endpoint, POST, /v1/getRaffePageD, {
+    "raffleCode": "3874"
+}, 403.0, {"message":"Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. </td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:78, Winners Monthwise Data With Login, POST, /v1/fetchWinnersMonthwiseDataWithLogin, {
+    "monthCode":5,
+    "year":2023
+}, 200.0, [{"id":9649,"Name":"Angela Cosgrove","TicketNo":440,"Location":"","ImgUrl":"","YouTubeVideoUrl":"","Draw_id":9311,"UserName_id":155572,"Position":1,"isFeatured":false,"created_at":"2023-05-21T21:01:43.539Z","DrawCode":"203845","MainImageUrl":"media23/raf4KBC_main.webp","Title":"£4,000 in a Briefcase - Low Odds"},{"i</td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:73, fetchWinnersGalleryWithLogin  by giving  wrong payload, POST, /v1/getRafflePageData, {
+    "raffl": "3874"
+}, 400.0, Invalid Request</td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:3, fetchFeaturedRaffles by giving invalid endpoint, POST, /v2/fetchFeaturedRaff, {}, 403.0, {"message":"Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. </td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:31, fetchAllPrizesWithLogin by giving  wrong payload, POST, /v1/fetchAllPrizesWithLogin, {
+    "raffl": "3874"
+}, 400.0, Invalid Request</td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:55, fetchSoldOutRaffles by giving  wrong payload, POST, /v1/getRafflePageData, {
+    "raffl": "3874"
+}, 400.0, Invalid Request</td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:13, fetchAllRaffles With Login  by giving  wrong payload, POST, /v1/fetchAllRafflesWithLogin, {"idwe":"123"}, 200.0, :[{"id":8197,"RaffleCode":3909,"QuantityOfItems":1,"MainImageUrl":"media23/rafNinjaBBQ_main.webp","Summary":".","Description":"Win an Ninja Woodfire Electric BBQ!\r\n
+
+</td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:82, getRafflePageData fetchAllRaffles With Login by giving invalid endpoint, POST, /v1/getRaffePageD, {
+    "raffleCode": "3874"
+}, 403.0, {"message":"Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. </td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:5, Featured Raffles With Login by giving valid data, POST, /v1/fetchFeaturedRafflesWithLogin, {}, 200.0, [{"id":8197,"RaffleCode":3909,"QuantityOfItems":1,"MainImageUrl":"media23/rafNinjaBBQ_main.webp","Summary":".","Description":"Win an Ninja Woodfire Electric BBQ!\r\n
+</td>
+<td></td>
+<td>6</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:80, fetchWinnersMonthWithLogin  by giving  wrong payload, POST, /v1/fetchWinnersMonthwiseDataWithLogin, {
+    "raffl": "3874"
+}, 400.0, Invalid Request</td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:70, fetchMyRafflesWithLogin  by giving  wrong payload, POST, /v1/fetchMyRafflesWithLogin, {
+    "raffl": "3874"
+}, 400.0, Invalid Request</td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:16, get Raffles With Login  by giving  wrong payload, POST, /v1/getRafflePageData, {
+    "raffl": "3874"
+}, 400.0, Invalid Request</td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:53, Sold Out Raffles, POST, /v1/fetchSoldOutRaffles, {}, 200.0, []</td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:35, All Charities, POST, /v1/fetchAllCharities, {}, 200.0, [{"id":300,"CharityName":"ActionAid UK","CharityDescription":"ActionAid is an international charity that works with women and girls living in poverty. ActionAid is ending violence and fighting poverty so that all women, everywhere, can create the future they want.","CharityImgUrl":"media/ActionAidUKLogo.png","CharityActive":true,"CharityUrl":"https://www.actionaid.org.uk/","CharitySortOrder":</td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:64, fetchNews by giving  wrong payload, POST, /v1/fetchNews, {
+    "raffl": "3874"
+}, 403.0, {"message":"Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. </td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:15, getRafflePageData fetchAllRaffles With Login by giving invalid endpoint, POST, /v1/getRaffePageD, {
+    "raffleCode": "3874"
+}, 403.0, {"message":"Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. </td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:36, fetchAllCharities by giving invalid endpoint, POST, /v1/getRaffePageD, {
+    "raffleCode": "3874"
+}, 403.0, {"message":"Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. </td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:86, fetchWinnersDatewiseDataFilterWithLogin   by giving  wrong payload, POST, /v1/fetchWinnersDatewiseDataFilterWithLogin, {
+    "raffl": "3874"
+}, 400.0, Invalid Request</td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:61, fetchNewsAndBlogs  by giving  wrong payload, POST, /v1/fetchNewsAndBlogs, {
+    "raffl": "3874"
+}, 200.0, [{"id":369,"title":"Raffolux player Karen makes headlines","slug":"raffolux-player-karen-makes-headlines","updated_on":"2023-04-26T12:29:51.829Z","content":"Karen Hewit, a devoted mother from the UK, has been making headlines recently for her first holiday in 30 years. Karen has dedicated her entire life to caring for her son Jack, who has cerebral palsy and severe epilepsy. Her story of love and sacrifice has touched the hearts of people around the world, and it's been revealed that she's a long-term player of Raffolux.com, the online raffle site where she won her holiday.\r\n
+
+\r\n\r\n
+
+\r\nKaren's son, Jack, was diagnosed with cerebral palsy at birth, which affects movement and coordination, causing significant physical and developmental disabilities. In addition, Jack also has severe epilepsy, requiring around-the-clock care and attention. Karen has been his primary caregiver for the past 30 years, providing constant support and assistance.\r\n
+
+\r\nRaffolux.com, the online raffle site, offers luxury prizes to raise money for charities, and Karen is a long-term player. Her participation in the site led her to win a week-long stay in a caravan park in Cornwall, a well-deserved break for her after three decades of caregiving.\r\n
+</td>
+<td></td>
+<td>6</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:19, get Raffles With Login  by giving  wrong payload, POST, /v1/getRafflePageDataWithLogin, {
+    "raffl": "3874"
+}, 400.0, Invalid Request</td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:21, fetchTopPrizes by giving invalid endpoint, POST, /v1/getRaffePageD, {
+    "raffleCode": "3874"
+}, 403.0, {"message":"Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. </td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:60, fetchNewsAndBlogs  by giving invalid endpoint, POST, /v1/getRaffePageD, {
+    "raffleCode": "3874"
+}, 403.0, {"message":"Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. </td>
+<td></td>
+<td>6</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:66, fetchEntriesSold by giving invalid endpoint, POST, /v1/getRaffePageD, {
+    "raffleCode": "3874"
+}, 403.0, {"message":"Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. </td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:37, fetchAllCharities  by giving  wrong payload, POST, /v1/fetchAllCharities, {
+    "raffl": "3874"
+}, 200.0, :[{"id":300,"CharityName":"ActionAid UK","CharityDescription":"ActionAid is an international charity that works with women and girls living in poverty. ActionAid is ending violence and fighting poverty so that all women, everywhere, can create the future they want.","CharityImgUrl":"media/</td>
+<td></td>
+<td>6</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:58, fetchSoldOutRafflesWithLogin by giving  wrong payload, POST, /v1/fetchSoldOutRafflesWithLogin, {
+    "raffl": "3874"
+}, 200.0, []</td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:20, fetchTopPrizes, POST, /v1/fetchTopPrizes, {
+    "raffle_id": 8716,
+    "topPrCnt": "50"
+}, 200.0, [{"id":655,"created":"2023-03-15T21:27:56.665Z","status":3,"ticket_no_alias":23514,"raffle_id":8716,"user_id":163509,"updated":"2023-03-15T21:27:56.665Z","price":"5000.00","legacy_tkt_nos":null,"instant_win_prize_id":655,"name":"£5,000 Cash","description":"","img_url":"media23/rafMWTH5000.webp","CategoryID_id":35,"cash_alternative":0},{"id":754,"created":"2023-03-15T21:27:57.763Z","status":3,"ticket_no_alias":34761,"raffle_id":8716,"user_id":1694,"updated":"2023-03-15T21:27:57.763Z","price":"2000.00","legacy_tkt_nos":null,"instant_win_prize_id":754,"name":"£2,000 Cash","description":"","img_url":"media23/rafMWTH2000.webp","CategoryID_id":35,"cash_alternative":0},{"id":754,"created":"2023-03-15T21:27:56.361Z","status":3,"ticket_no_alias":21121,"raffle_id":8716,"user_id":163738,"updated":"2023-03-15T21:27:56.361Z","price":"2000.00","legacy_tkt_nos":null,"instant_win_prize_id":754,"name":"£2,000 Cash","description":"","img_url":"media23/rafMWTH2000.webp","CategoryID_id":35,"cash_alternative":0},{"id":149,"created":"2023-03-15T21:27:54.844Z","status":3,"ticket_no_alias":6585,"raffle_id":8716,"user_id":163738,"updated":"2023-03-15T21:27:54.844Z","price":"1000.00","legacy_tkt_nos":null,"instant_win_prize_id":149,"name":"£1,000 Tax Free Cash","description":"","img_url":"media23/rafMWTH1000.webp","CategoryID_id":35,"cash_alternative":0},{"id":149,"created":"2023-03-15T21:27:54.707Z","status":3,"ticket_no_alias":4520,"raffle_id":8716,"user_id":163509,"updated":"2023-03-15T21:27:54.707Z","price":"1000.00","legacy_tkt_nos":null,"instant_win_prize_id":149,"name":"£1,000 Tax Free Cash","description":"","img_url":"media23/rafMWTH1000.webp","CategoryID_id":35,"cash_alternative":0},{"id":149,"created":"2023-03-15T21:27:55.373Z","status":3,"ticket_no_alias":11581,"raffle_id":8716,"user_id":112301,"updated":"2023-03-15T21:27:55.373Z","price":"1000.00","legacy_tkt_nos":null,"instant_win_prize_id":149,"name":"£1,000 Tax Free Cash","description":"","img_url":"media23/rafMWTH1000.webp","CategoryID_id":35,"cash_alternative":0},{"id":149,"created":"2023-03-15T21:27:56.445Z","status":3,"ticket_no_alias":22693,"raffle_id":8716,"user_id":77968,"updated":"2023-03-15T21:27:56.445Z","price":"1000.00","legacy_tkt_nos":null,"instant_win_prize_id":149,"name":"£1,000 Tax Free Cash","description":"","img_url":"media23/rafMWTH1000.webp","CategoryID_id":35,"cash_alternative":0},{"id":149,"created":"2023-03-15T21:27:55.367Z","status":3,"ticket_no_alias":11163,"raffle_id":8716,"user_id":5306,"updated":"2023-03-15T21:27:55.367Z","price":"1000.00","legacy_tkt_nos":null,"instant_win_prize_id":149,"name":"£1,000 Tax Free Cash","description":"","img_url":"media23/rafMWTH1000.webp","CategoryID_id":35,"cash_alternative":0},{"id":149,"created":"2023-03-15T21:27:56.875Z","status":3,"ticket_no_alias":26405,"raffle_id":8716,"user_id":128879,"updated":"2023-03-15T21:27:56.875Z","price":"1000.00","legacy_tkt_nos":null,"instant_win_prize_id":149,"name":"£1,000 Tax Free Cash","description":"","img_url":"media23/rafMWTH1000.webp","CategoryID_id":35,"cash_alternative":0},{"id":149,"created":"2023-03-15T21:27:56.946Z","status":3,"ticket_no_alias":27593,"raffle_id":8716,"user_id":163738,"updated":"2023-03-15T21:27:56.946Z","price":"1000.00","legacy_tkt_nos":null,"instant_win_prize_id":149,"name":"£1,000 Tax Free Cash","description":"","img_url":"media23/rafMWTH1000.webp","CategoryID_id":35,"cash_alternative":0},{"id":149,"created":"2023-03-15T21:27:56.437Z","status":3,"ticket_no_alias":22138,"raffle_id":8716,"user_id":102777,"updated":"2023-03-15T21:27:56.437Z","price":"1000.00","legacy_tkt_nos":null,"instant_win_prize_id":149,"name":"£1,000 Tax Free Cash","description":"","img_url":"media23/rafMWTH1000.webp","CategoryID_id":35,"cash_alternative":0},{"id":149,"created":"2023-03-15T21:27:56.436Z","status":3,"ticket_no_alias":22129,"raffle_id":8716,"user_id":2393,"updated":"2023-03-15T21:27:56.436Z","price":"1000.00","legacy_tkt_nos":null,"instant_win_prize_id":149,"name":"£1,000 Tax Free Cash","description":"","img_url":"media23/rafMWTH1000.webp","CategoryID_id":35,"cash_alternative":0},{"id":149,"created":"2023-03-15T21:27:54.253Z","status":3,"ticket_no_alias":208,"raffle_id":8716,"user_id":121277,"updated":"2023-03-15T21:27:54.253Z","price":"1000.00","legacy_tkt_nos":null,"instant_win_prize_id":149,"name":"£1,000 Tax Free Cash","description":"","img_url":"media23/rafMWTH1000.webp","CategoryID_id":35,"cash_alternative":0},{"id":149,"created":"2023-03-15T21:27:55.080Z","status":3,"ticket_no_alias":7644,"raffle_id":8716,"user_id":28895,"updated":"2023-03-15T21:27:55.080Z","price":"1000.00","legacy_tkt_nos":null,"instant_win_prize_id":149,"name":"£1,000 Tax Free Cash","description":"","img_url":"media23/rafMWTH1000.webp","CategoryID_id":35,"cash_alternative":0},{"id":149,"created":"2023-03-15T21:27:56.225Z","status":3,"ticket_no_alias":19291,"raffle_id":8716,"user_id":124940,"updated":"2023-03-15T21:27:56.225Z","price":"1000.00","legacy_tkt_nos":null,"instant_win_prize_id":149,"name":"£1,000 Tax Free Cash","description":"","img_url":"media23/rafMWTH1000.webp","CategoryID_id":35,"cash_alternative":0},{"id":149,"created":"2023-03-15T21:27:55.661Z","status":3,"ticket_no_alias":13231,"raffle_id":8716,"user_id":99015,"updated":"2023-03-15T21:27:55.661Z","price":"1000.00","legacy_tkt_nos":null,"instant_win_prize_id":149,"name":"£1,000 Tax Free Cash","description":"","img_url":"media23/rafMWTH1000.webp","CategoryID_id":35,"cash_alternative":0},{"id":149,"created":"2023-03-15T21:27:55.729Z","status":3,"ticket_no_alias":14198,"raffle_id":8716,"user_id":149602,"updated":"2023-03-15T21:27:55.729Z","price":"1000.00","legacy_tkt_nos":null,"instant_win_prize_id":149,"name":"£1,000 Tax Free Cash","description":"","img_url":"media23/rafMWTH1000.webp","CategoryID_id":35,"cash_alternative":0},{"id":149,"created":"2023-03-15T21:27:56.360Z","status":3,"ticket_no_alias":21080,"raffle_id":8716,"user_id":165331,"updated":"2023-03-15T21:27:56.360Z","price":"1000.00","legacy_tkt_nos":null,"instant_win_prize_id":149,"name":"£1,000 Tax Free Cash","description":"","img_url":"media23/rafMWTH1000.webp","CategoryID_id":35,"cash_alternative":0},{"id":149,"created":"2023-03-15T21:27:57.823Z","status":3,"ticket_no_alias":35134,"raffle_id":8716,"user_id":145925,"updated":"2023-03-15T21:27:57.823Z","price":"1000.00","legacy_tkt_nos":null,"instant_win_prize_id":149,"name":"£1,000 Tax Free Cash","description":"","img_url":"media23/rafMWTH1000.webp","CategoryID_id":35,"cash_alternative":0},{"id":149,"created":"2023-03-15T21:27:55.072Z","status":3,"ticket_no_alias":7073,"raffle_id":8716,"user_id":163738,"updated":"2023-03-15T21:27:55.072Z","price":"1000.00","legacy_tkt_nos":null,"instant_win_prize_id":149,"name":"£1,000 Tax Free Cash","description":"","img_url":"media23/rafMWTH1000.webp","CategoryID_id":35,"cash_alternative":0},{"id":149,"created":"2023-03-15T21:27:57.760Z","status":3,"ticket_no_alias":34595,"raffle_id":8716,"user_id":124940,"updated":"2023-03-15T21:27:57.760Z","price":"1000.00","legacy_tkt_nos":null,"instant_win_prize_id":149,"name":"£1,000 Tax Free Cash","description":"","img_url":"media23/rafMWTH1000.webp","CategoryID_id":35,"cash_alternative":0},{"id":149,"created":"2023-03-15T21:27:55.222Z","status":3,"ticket_no_alias":9825,"raffle_id":8716,"user_id":19292,"updated":"2023-03-15T21:27:55.222Z","price":"1000.00","legacy_tkt_nos":null,"instant_win_prize_id":149,"name":"£1,000 Tax Free Cash","description":"","img_url":"media23/rafMWTH1000.webp","CategoryID_id":35,"cash_alternative":0},{"id":149,"created":"2023-03-15T21:27:55.595Z","status":3,"ticket_no_alias":12548,"raffle_id":8716,"user_id":116121,"updated":"2023-03-15T21:27:55.595Z","price":"1000.00","legacy_tkt_nos":null,"instant_win_prize_id":149,"name":"£1,000 Tax Free Cash","description":"","img_url":"media23/rafMWTH1000.webp","CategoryID_id":35,"cash_alternative":0},{"id":149,"created":"2023-03-15T21:27:57.893Z","status":3,"ticket_no_alias":36070,"raffle_id":8716,"user_id":82749,"updated":"2023-03-15T21:27:57.893Z","price":"1000.00","legacy_tkt_nos":null,"instant_win_prize_id":149,"name":"£1,000 Tax Free Cash","description":"","img_url":"media23/rafMWTH1000.webp","CategoryID_id":35,"cash_alternative":0},{"id":149,"created":"2023-03-15T21:27:56.873Z","status":3,"ticket_no_alias":26297,"raffle_id":8716,"user_id":138106,"updated":"2023-03-15T21:27:56.873Z","price":"1000.00","legacy_tkt_nos":null,"instant_win_prize_id":149,"name":"£1,000 Tax Free Cash","description":"","img_url":"media23/rafMWTH1000.webp","CategoryID_id":35,"cash_alternative":0},{"id":149,"created":"2023-03-15T21:27:57.255Z","status":3,"ticket_no_alias":29501,"raffle_id":8716,"user_id":19292,"updated":"2023-03-15T21:27:57.255Z","price":"1000.00","legacy_tkt_nos":null,"instant_win_prize_id":149,"name":"£1,000 Tax Free Cash","description":"","img_url":"media23/rafMWTH1000.webp","CategoryID_id":35,"cash_alternative":0},{"id":149,"created":"2023-03-15T21:27:56.365Z","status":3,"ticket_no_alias":21436,"raffle_id":8716,"user_id":112301,"updated":"2023-03-15T21:27:56.365Z","price":"1000.00","legacy_tkt_nos":null,"instant_win_prize_id":149,"name":"£1,000 Tax Free Cash","description":"","img_url":"media23/rafMWTH1000.webp","CategoryID_id":35,"cash_alternative":0},{"id":149,"created":"2023-03-15T21:27:57.686Z","status":3,"ticket_no_alias":33229,"raffle_id":8716,"user_id":37632,"updated":"2023-03-15T21:27:57.686Z","price":"1000.00","legacy_tkt_nos":null,"instant_win_prize_id":149,"name":"£1,000 Tax Free Cash","description":"","img_url":"media23/rafMWTH1000.webp","CategoryID_id":35,"cash_alternative":0},{"id":700,"created":"2023-03-15T21:27:58.289Z","status":3,"ticket_no_alias":39991,"raffle_id":8716,"user_id":155231,"updated":"2023-03-15T21:27:58.289Z","price":"997.44","legacy_tkt_nos":null,"instant_win_prize_id":700,"name":"Holiday to Crete 🇬🇷","description":"","img_url":"IW/crete.webp","CategoryID_id":9,"cash_alternative":0},{"id":259,"created":"2023-03-15T21:27:57.900Z","status":3,"ticket_no_alias":36595,"raffle_id":8716,"user_id":145925,"updated":"2023-03-15T21:27:57.900Z","price":"499.99","legacy_tkt_nos":null,"instant_win_prize_id":259,"name":"Dyson Airwrap","description":"","img_url":"IW/dysonairwrap.webp","CategoryID_id":6,"cash_alternative":0},{"id":244,"created":"2023-03-15T21:27:56.812Z","status":3,"ticket_no_alias":25794,"raffle_id":8716,"user_id":105080,"updated":"2023-03-15T22:19:52.388Z","price":"499.00","legacy_tkt_nos":[],"instant_win_prize_id":244,"name":"New iPad","description":"","img_url":"IW/ipad10thgen.webp","CategoryID_id":6,"cash_alternative":0},{"id":245,"created":"2023-03-15T21:27:58.277Z","status":3,"ticket_no_alias":39152,"raffle_id":8716,"user_id":108826,"updated":"2023-03-15T21:27:58.277Z","price":"400.00","legacy_tkt_nos":null,"instant_win_prize_id":245,"name":"Samsung 50\" TV","description":"","img_url":"IW/officetv.webp","CategoryID_id":6,"cash_alternative":0},{"id":752,"created":"2023-03-15T21:27:55.660Z","status":3,"ticket_no_alias":13168,"raffle_id":8716,"user_id":145925,"updated":"2023-03-15T21:27:55.660Z","price":"389.99","legacy_tkt_nos":null,"instant_win_prize_id":752,"name":"Ninja Woodfire Electric BBQ","description":"","img_url":"IW/ninjawoodfire.webp","CategoryID_id":6,"cash_alternative":0},{"id":187,"created":"2023-03-15T21:27:57.251Z","status":3,"ticket_no_alias":29194,"raffle_id":8716,"user_id":142485,"updated":"2023-03-15T21:27:57.251Z","price":"389.00","legacy_tkt_nos":null,"instant_win_prize_id":187,"name":"PS5 Digital Edition","description":"","img_url":"IW/PS5DigitalEdition.webp","CategoryID_id":6,"cash_alternative":0},{"id":187,"created":"2023-03-15T21:27:54.347Z","status":3,"ticket_no_alias":1675,"raffle_id":8716,"user_id":7188,"updated":"2023-03-15T21:27:54.347Z","price":"389.00","legacy_tkt_nos":null,"instant_win_prize_id":187,"name":"PS5 Digital Edition","description":"","img_url":"IW/PS5DigitalEdition.webp","CategoryID_id":6,"cash_alternative":0},{"id":270,"created":"2023-03-15T21:27:55.737Z","status":3,"ticket_no_alias":14797,"raffle_id":8716,"user_id":124940,"updated":"2023-03-15T21:27:55.737Z","price":"349.00","legacy_tkt_nos":null,"instant_win_prize_id":270,"name":"Steam Deck","description":"","img_url":"IW/steamdeck.webp","CategoryID_id":6,"cash_alternative":0},{"id":257,"created":"2023-03-15T21:27:55.806Z","status":3,"ticket_no_alias":15802,"raffle_id":8716,"user_id":163738,"updated":"2023-03-15T21:27:55.806Z","price":"289.95","legacy_tkt_nos":null,"instant_win_prize_id":257,"name":"Nintendo Switch OLED","description":"","img_url":"IW/oledswitch.webp","CategoryID_id":6,"cash_alternative":0},{"id":709,"created":"2023-03-15T21:27:56.946Z","status":3,"ticket_no_alias":27615,"raffle_id":8716,"user_id":154224,"updated":"2023-03-15T21:27:56.946Z","price":"250.00","legacy_tkt_nos":null,"instant_win_prize_id":709,"name":"Oxford City Break","description":"","img_url":"IW/oxford.webp","CategoryID_id":9,"cash_alternative":0},{"id":751,"created":"2023-03-15T21:27:56.871Z","status":3,"ticket_no_alias":26168,"raffle_id":8716,"user_id":163509,"updated":"2023-03-15T21:27:56.871Z","price":"249.99","legacy_tkt_nos":null,"instant_win_prize_id":751,"name":"Ninja Speedi","description":"","img_url":"IW/ninjaspeedi.webp","CategoryID_id":6,"cash_alternative":0},{"id":144,"created":"2023-03-15T21:27:57.257Z","status":3,"ticket_no_alias":29631,"raffle_id":8716,"user_id":145255,"updated":"2023-03-15T21:27:57.257Z","price":"249.99","legacy_tkt_nos":null,"instant_win_prize_id":144,"name":"Xbox Series S","description":"","img_url":"IW/xboxseriess.webp","CategoryID_id":7,"cash_alternative":0},{"id":753,"created":"2023-03-15T21:27:55.072Z","status":3,"ticket_no_alias":7063,"raffle_id":8716,"user_id":105080,"updated":"2023-03-15T21:27:55.072Z","price":"200.00","legacy_tkt_nos":null,"instant_win_prize_id":753,"name":"£200 Cash","description":"","img_url":"media23/rafMWTH200.webp","CategoryID_id":35,"cash_alternative":0},{"id":753,"created":"2023-03-15T21:27:54.713Z","status":3,"ticket_no_alias":4938,"raffle_id":8716,"user_id":165331,"updated":"2023-03-15T21:27:54.713Z","price":"200.00","legacy_tkt_nos":null,"instant_win_prize_id":753,"name":"£200 Cash","description":"","img_url":"media23/rafMWTH200.webp","CategoryID_id":35,"cash_alternative":0},{"id":753,"created":"2023-03-15T21:27:54.709Z","status":3,"ticket_no_alias":4672,"raffle_id":8716,"user_id":24779,"updated":"2023-03-15T21:27:54.709Z","price":"200.00","legacy_tkt_nos":null,"instant_win_prize_id":753,"name":"£200 Cash","description":"","img_url":"media23/rafMWTH200.webp","CategoryID_id":35,"cash_alternative":0},{"id":753,"created":"2023-03-15T21:27:56.363Z","status":3,"ticket_no_alias":21266,"raffle_id":8716,"user_id":31678,"updated":"2023-03-15T21:27:56.363Z","price":"200.00","legacy_tkt_nos":null,"instant_win_prize_id":753,"name":"£200 Cash","description":"","img_url":"media23/rafMWTH200.webp","CategoryID_id":35,"cash_alternative":0},{"id":753,"created":"2023-03-15T21:27:54.840Z","status":3,"ticket_no_alias":6250,"raffle_id":8716,"user_id":17684,"updated":"2023-03-15T21:27:54.840Z","price":"200.00","legacy_tkt_nos":null,"instant_win_prize_id":753,"name":"£200 Cash","description":"","img_url":"media23/rafMWTH200.webp","CategoryID_id":35,"cash_alternative":0},{"id":753,"created":"2023-03-15T21:27:55.214Z","status":3,"ticket_no_alias":9286,"raffle_id":8716,"user_id":19292,"updated":"2023-03-15T21:27:55.214Z","price":"200.00","legacy_tkt_nos":null,"instant_win_prize_id":753,"name":"£200 Cash","description":"","img_url":"media23/rafMWTH200.webp","CategoryID_id":35,"cash_alternative":0},{"id":753,"created":"2023-03-15T21:27:56.234Z","status":3,"ticket_no_alias":19931,"raffle_id":8716,"user_id":24779,"updated":"2023-03-15T21:27:56.234Z","price":"200.00","legacy_tkt_nos":null,"instant_win_prize_id":753,"name":"£200 Cash","description":"","img_url":"media23/rafMWTH200.webp","CategoryID_id":35,"cash_alternative":0},{"id":753,"created":"2023-03-15T21:27:56.163Z","status":3,"ticket_no_alias":18703,"raffle_id":8716,"user_id":105080,"updated":"2023-03-15T21:27:56.163Z","price":"200.00","legacy_tkt_nos":null,"instant_win_prize_id":753,"name":"£200 Cash","description":"","img_url":"media23/rafMWTH200.webp","CategoryID_id":35,"cash_alternative":0},{"id":753,"created":"2023-03-15T21:27:55.799Z","status":3,"ticket_no_alias":15330,"raffle_id":8716,"user_id":110218,"updated":"2023-03-15T21:27:55.799Z","price":"200.00","legacy_tkt_nos":null,"instant_win_prize_id":753,"name":"£200 Cash","description":"","img_url":"media23/rafMWTH200.webp","CategoryID_id":35,"cash_alternative":0},{"id":753,"created":"2023-03-15T21:27:56.439Z","status":3,"ticket_no_alias":22338,"raffle_id":8716,"user_id":145925,"updated":"2023-03-15T21:27:56.439Z","price":"200.00","legacy_tkt_nos":null,"instant_win_prize_id":753,"name":"£200 Cash","description":"","img_url":"media23/rafMWTH200.webp","CategoryID_id":35,"cash_alternative":0}]
+check_circle 9:49:59 AM Assertion passed
+check_circle 9:49:59 AM All sheet row datas are executed successfully</td>
+<td></td>
+<td>6</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:76, fetchWinnersGallery  by giving  wrong payload, POST, /v1/fetchWinnersGallery, {
+    "raffl": "3874"
+}, 502.0, {"message": "Internal server error"}</td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:28, fetchAllPrizes  by giving  wrong payload, POST, /v1/fetchAllPrizes, {
+    "raffewrwl": "3874"
+}, 400.0, Invalid Request</td>
+<td></td>
+<td>6</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:4, fetchFeaturedRaffles by giving  wrong payload, POST, /v1/fetchFeaturedRaffles, {"idwrwer":"123"}, 200.0, [{"id":8197,"RaffleCode":3909,"QuantityOfItems":1,"MainImageUrl":"media23/rafNinjaBBQ_main.webp","Summary":".","Description":"Win an Ninja Woodfire Electric BBQ!\r\n
+</td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:65, Entries Sold, POST, /v1/fetchEntriesSold, {
+    "raffle_id": 8917
+}, 200.0, {"soldPercentage":0,"remainingEntriesCount":399,"totalEntriesCount":399,"soldEntriesCount":0}</td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:18, getRafflePageData fetchAllRaffles With Login by giving invalid endpoint, POST, /v1/getRaffePageD, {
+    "raffleCode": "3874"
+}, 403.0, {"message":"Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. </td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:42, getRafflePageData fetchAllRaffles With Login by giving invalid endpoint, POST, /v1/getRaffePageD, {
+    "raffleCode": "3874"
+}, 403.0, {"message":"Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. </td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:38, Total Raised Charity Count, POST, /v1/fetchTotalRaisedCharitiesCount, {}, 200.0, [{"sum":"594828"}]</td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:67, fetchEntriesSold  by giving  wrong payload, POST, /v1/fetchEntriesSold, {
+    "raffl": "3874"
+}, 502.0, {"message": "Internal server error"}</td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:29, All Prizes with Login, POST, /v1/fetchAllPrizesWithLogin, {
+   
+    "raffle_id": 8860,
+    "topPrizes": 50
+}, 200.0, [{"ticket_no_alias":80,"status":3,"instant_win_prize__name":"£25 Site Credit","instant_win_prize__value":"25.00"},{"ticket_no_alias":210,"status":3,"instant_win_prize__name":"£25 Site Credit","instant_win_prize__value":"25.00"},{"ticket_no_alias":248,"status":3,"instant_win_prize__name":"£50 Cash","instant_win_prize__value":"50.00"},{"ticket_no_alias":300,"status":3,"instant_win_prize__name":"£10</td>
+<td></td>
+<td>6</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:34, fetchAllPrizesFilter by giving  wrong payload, POST, /v1/fetchAllPrizesFilter, {
+    "raffl": "3874"
+}, 400.0, Invalid Request</td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:25, fetchTopPrizesWithLogin by giving  wrong payload, POST, /v1/fetchTopPrizesWithLogin, {
+    "raffl": "3874"
+}, 400.0, Invalid Request</td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
+<tr>
+<td title='com.Raffloux.ApiTest.RafflouxApiTestClass.RestApiLoginValidations()'><b>RestApiLoginValidations</b><br>Test class: com.Raffloux.ApiTest.RafflouxApiTestClass<br>Parameters: ROW:39, fetchTotalRaisedCharitiesCount by giving invalid endpoint, POST, /v1/getRaffePageD, {
+    "raffleCode": "3874"
+}, 403.0, {"message":"Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. </td>
+<td></td>
+<td>5</td>
+<td>com.Raffloux.ApiTest.RafflouxApiTestClass@724f138e</td></tr>
 </table><p>
 </body>
 </html>

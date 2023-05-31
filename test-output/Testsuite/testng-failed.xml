@@ -6,11 +6,24 @@
   </listeners>
   <test thread-count="5" name="RESTAPITest(failed)">
     <classes>
-      <class name="com.api.FTValidations.LoginFTValidations">
+      <class name="com.Raffloux.ApiTest.RafflouxApiTestClass">
         <methods>
-          <include name="RestApiLoginValidations" invocation-numbers="5"/>
+          <include name="afterMethod"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="RestApiLoginValidations"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.api.FTValidations.LoginFTValidations -->
+      </class> <!-- com.Raffloux.ApiTest.RafflouxApiTestClass -->
+      <class name="com.Raffloux.ApiTest.LoginApiPN">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setUp"/>
+          <include name="RafflouxRestApiValidations" invocation-numbers="0 1 2 3 4 5 6"/>
+          <include name="tearDown"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.Raffloux.ApiTest.LoginApiPN -->
     </classes>
   </test> <!-- RESTAPITest(failed) -->
 </suite> <!-- Failed suite [Testsuite] -->

@@ -19,7 +19,7 @@ public class ExtendReportManager implements ITestListener {
 	public ExtentReports extent;
 	public ExtentTest test;
 	String repName;
-
+ 
 	public void onStart(ITestContext testContext) {
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());// time stamp
 		repName = "Test-Report - " + timeStamp + ".html";
@@ -34,7 +34,7 @@ public class ExtendReportManager implements ITestListener {
 		extent.setSystemInfo("User Name", System.getProperty("user.name"));
 		extent.setSystemInfo("Environemnt", "QA");
 
-	}
+	} 
 
 	public void onTestSuccess(ITestResult result) {
 		test = extent.createTest(result.getName());
@@ -62,6 +62,6 @@ public class ExtendReportManager implements ITestListener {
 
 	public void onFinish(ITestContext testContext) {
 		extent.flush();// report generate
-	}
+	 }
 
 }

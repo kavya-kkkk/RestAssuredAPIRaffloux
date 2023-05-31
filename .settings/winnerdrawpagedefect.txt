@@ -1,0 +1,14 @@
+draw details "tickert sort" button design is not as per the design
+winner page,When searched jan,feb ,march and april the list of raffles details is not dispayed as per the design
+credit page,credit sepnt and won credit logo is not as per the design
+credit page, credit balnace "10.oo" the decimal value size should be as per the design
+creadit page, when there no credit purchased /spent "today "which is showing today title
+winner page ,"winner list below ", "Congratulations Stacey L with winning ticket number 88"text  font family is not as per the design
+charity page,supported charity list, give the space between charity logo and name of the charity as per the design 
+winner page ,"top winner in months below" ,when we are moving images the below " the winner list page"  dot( .......) should be changed based on the images position as per the design
+winner page ,top winner in months below ,"winner image" should displayed one after other nowas per the design 
+winner page,the list of monthly draw details  date and month text should be ass per the design (ex:Thursday 10th February)
+draw details page, drawn,total enteries ,winner logo and winner(S) logo and size should be as per the design
+
+13 dev fixed
+4 reopen

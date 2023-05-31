@@ -1,0 +1,13 @@
+winner page,In dark theme, month below ,"sat 2 may" text is not visiable
+winner page,month below  "draw" button hight and width should be as per the design
+winner page,the list of monthly draw details "Congratulations Mike G with winning ticket number 782 " should be aligned properly 
+winner page,the list of monthly draw details  date and month text shuold be ass per the design (ex:Thursday 10th February)
+winner page," search by prize or date" field ,hight and width should be as per the design
+draw details page,image should be as per the design
+draw details page, drawn,total enteries ,winner logo and winner(S) logo and size should be as per the design
+draw details page,"Random.org " text positon and size should be as per the design
+draw details page,"Draw provided and verifed by " text should alinged properly
+draw details page, winners section  ,"arrow mark " logo should be as per the design
+draw details page,winners section , give the spaces between the winners name and number of ticket purchased as per the design
+draw details page,"RANDOM.ORG" text color should be as per the design
+draw details page, when we click on draw button , the draw details page "user menu" is moving " left to right"

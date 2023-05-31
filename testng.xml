@@ -7,7 +7,9 @@
 </listeners>
   <test thread-count="5" name="RESTAPITest">
     <classes>
-      <class name="com.api.FTValidations.LoginFTValidations"/>
+      <class name="com.Raffloux.ApiTest.RafflouxApiTestClass"/>
+      <class name="com.Raffloux.ApiTest.LoginApiPN"/>
+      
     </classes>
   </test> <!-- RESTAPITest -->
 </suite> <!-- TestSuite -->
